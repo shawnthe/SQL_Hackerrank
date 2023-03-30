@@ -1,0 +1,43 @@
+Weather Observation Station 7.mysql:
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '[aeiouAEIOU]$';
+
+Weather Observation Station 8.mysql:
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[aeiouAEIOU].*[aeiouAEIOU]$';
+
+Weather Observation Station 9.mysql
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[^aeiouAEIOU]';
+
+Weather Observation Station 10.mysql
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '[^aeiouAEIOU]$';
+
+Weather Observation Station 11.mysql
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[^aeiouAEIOU]' OR CITY REGEXP '[^aeiouAEIOU]$';
+
+Weather Observation Station 12.mysql
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[^aeiouAEIOU]' AND CITY REGEXP '[^aeiouAEIOU]$';
+
+
+
+
+
+
+
+
